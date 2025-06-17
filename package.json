@@ -1,0 +1,44 @@
+{
+    "name": "flamework-template",
+    "version": "1.0.0",
+    "description": "",
+    "main": "index.js",
+    "scripts": {
+        "build": "rbxtsc",
+        "watch": "rbxtsc -w",
+        "format": "npx prettier . --write",
+        "prepare": "husky",
+        "dev": "concurrently \"rojo serve\" \"rbxtsc -w\""
+    },
+    "keywords": [],
+    "author": "",
+    "license": "ISC",
+    "devDependencies": {
+        "@rbxts/compiler-types": "^2.3.0-types.1",
+        "@rbxts/types": "^1.0.777",
+        "@typescript-eslint/eslint-plugin": "^6.7.5",
+        "@typescript-eslint/parser": "^6.7.5",
+        "concurrently": "^9.1.2",
+        "eslint": "^7.31.0",
+        "eslint-config-prettier": "^8.3.0",
+        "eslint-plugin-prettier": "^3.4.0",
+        "eslint-plugin-roblox-ts": "^0.0.30",
+        "husky": "^9.1.7",
+        "lint-staged": "^16.1.0",
+        "prettier": "2.8.8",
+        "rbxts-transformer-flamework": "^1.2.2",
+        "roblox-ts": "^3.0.0",
+        "typescript": "~5.2.2"
+    },
+    "dependencies": {
+        "@flamework/components": "^1.2.2",
+        "@flamework/core": "^1.2.2",
+        "@flamework/networking": "^1.2.2",
+        "@rbxts/react": "^17.2.3",
+        "@rbxts/react-roblox": "^17.2.3",
+        "cwdt": "^0.0.0-dev.0"
+    },
+    "lint-staged": {
+        "**/*": "prettier --write --ignore-unknown"
+    }
+}
